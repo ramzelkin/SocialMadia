@@ -1,5 +1,4 @@
 import {StyleSheet} from 'react-native';
-import {getFontFamily} from '../../assets/fonts/helper';
 
 const style = StyleSheet.create({
   userImageContainer: {

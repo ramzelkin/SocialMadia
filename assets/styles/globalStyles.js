@@ -3,15 +3,15 @@ import {getFontFamily} from '../fonts/helper';
 
 const globalStyle = StyleSheet.create({
   header: {
-    marginLeft: 27,
+    marginLeft: 7,
     marginTop: 30,
-    marginRight: 17,
+    marginRight: 7,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   messageIcon: {
-    padding: 14,
+    padding: 3,
     backgroundColor: '#F9FAFB',
     borderRadius: 100,
   },
@@ -24,8 +24,8 @@ const globalStyle = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     position: 'absolute',
-    right: 12,
-    top: 10,
+    right: 0,
+    top: 2,
   },
   messageNumber: {
     color: '#ffffff',
@@ -34,7 +34,10 @@ const globalStyle = StyleSheet.create({
   },
   userStoryConteainer: {
     marginTop: 20,
-    marginHorizontal: 28,
+    marginHorizontal: 8,
+  },
+  userPostContainer: {
+    marginHorizontal: 24,
   },
 });
 export default globalStyle;
