@@ -1,11 +1,16 @@
 import {StyleSheet} from 'react-native';
 import {getFontFamily} from '../../assets/fonts/helper';
+import {
+  horizontalScale,
+  scaleFontSize,
+  verticalScale,
+} from '../../assets/styles/scalling';
 
 const style = StyleSheet.create({
   userPostContainer: {
-    marginTop: 35,
+    marginTop: verticalScale(35),
     borderBottomWidth: 1,
-    paddingBottom: 20,
+    paddingBottom: verticalScale(20),
     borderBottomColor: '#eff2f6',
   },
   userContainer: {
@@ -13,7 +18,7 @@ const style = StyleSheet.create({
   },
   userTextContainer: {
     justifyContent: 'center',
-    marginLeft: 10,
+    marginLeft: horizontalScale(10),
   },
   user: {
     flexDirection: 'row',
@@ -23,22 +28,21 @@ const style = StyleSheet.create({
   userName: {
     color: '#000',
     fontFamily: getFontFamily('Inter', '600'),
-    fontSize: 16,
+    fontSize: scaleFontSize(16),
   },
   location: {
     color: '#79869F',
     fontFamily: getFontFamily('Inter', '400'),
-    fontSize: 12,
-    marginTop: 5,
+    fontSize: scaleFontSize(12),
+    marginTop: verticalScale(5),
   },
   postImage: {
     borderRadius: 20,
     alignItems: 'center',
-    marginTop: 20,
-    marginVertical: 20,
+    marginVertical: verticalScale(20),
   },
   userPostStats: {
-    marginLeft: 10,
+    marginLeft: horizontalScale(10),
     flexDirection: 'row',
   },
   userPostStatButton: {
@@ -46,10 +50,10 @@ const style = StyleSheet.create({
   },
   userPostStatButtonRight: {
     flexDirection: 'row',
-    marginLeft: 27,
+    marginLeft: horizontalScale(27),
   },
   userPostStatText: {
-    marginLeft: 3,
+    marginLeft: horizontalScale(3),
     color: '#79869F',
   },
 });
